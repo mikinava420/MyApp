@@ -1,7 +1,7 @@
 [app]
 
 # (str) Title of your application
-title = devocionales
+title = Devo
 
 # (str) Package name
 package.name = myapp
@@ -47,7 +47,7 @@ requirements = python3,kivy,pillow,pytube,certifi,ht>
 #presplash.filename = %(source.dir)s/data/presplash.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)/storage/emulated/0/DCIM/apliConPy/Screenshot_20230611-001104-315.png
+icon.filename = %(source.dir)/storage/emulated/0/DCIM/CyberTube/Screenshot_20230611-001104-315.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
