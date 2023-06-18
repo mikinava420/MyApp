@@ -1,0 +1,27 @@
+MDScreen:
+    name:'downloader'
+    
+    MDLabel:
+        pos_hint:{"center_x":0.5,"center_y":0.95}
+        text:"Downloading File"
+        halign:"center"
+        font_name:"assets/Poppins-Bold.ttf"
+    AnchorLayout:
+        anchor_y:"top"
+        anchor_x:"left"
+        MDIconButton:
+            icon:"chevron-left"
+            on_press:app.show_warn()
+    AnchorLayout:
+        size_hint:None,None
+        size:app.y,dp(10)
+        MDProgressBar:
+            id:progressbar
+            max:1
+            value:0
+            radius:dp(20)
+    MDLabel:
+        halign:"center"
+        text:str(progressbar.value).split(".")[-1][:2]+" %"
+        font:"assets/KdamThmorPro-Regular.ttf"
+        font_size:"30sp"

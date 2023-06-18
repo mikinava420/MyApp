@@ -1,0 +1,80 @@
+#: import get_color_from_hex kivy.utils.get_color_from_hex
+#: import _thread _thread
+MDScreen:
+	name:"Main"
+    AnchorLayout:
+        anchor_y:"top"
+        anchor_x:"left"
+        MDIconButton:
+            icon:"chevron-left"
+            on_press:app.screen_manager.transition.direction="right";app.screen_manager.current = "Home"
+	MDLabel:
+		pos_hint:{"center_x":0.5,"center_y":0.95}
+		text:"Video Details"
+		halign:"center"
+		font_name:"assets/Poppins-Bold.ttf"
+		font_size:"20sp"
+    Card:
+        pos_hint:{"center_x":0.5,"center_y":0.65}
+        radius:dp(20)
+        size_hint:None,None 
+        size:app.y-dp(15),"225dp"
+        FitImage:
+            radius:dp(20)
+            id:image
+            source:app.link_image
+	MDLabel:
+        id:title
+		pos_hint:{"center_x":0.5,"center_y":0.35}
+		text:app.link_title
+		halign:"center"
+		font_name:"assets/Poppins-Regular.ttf"
+		font_size:"17sp"
+    Card:
+        pos_hint:{"center_x":0.5,"center_y":0.2}
+        radius:dp(10)
+        size_hint:None,None 
+        ripple_behavior:True
+        size:app.y-dp(15),"50dp"
+        on_press:_thread.start_new_thread(app.open_video_downloader,())
+        md_bg_color:app.theme_cls.accent_light
+        RelativeLayout:
+            BoxLayout:
+                padding:dp(10)
+                MDLabel:
+                    pos_hint:{"center_x":0.5,"center_y":0.5}
+                    text:"Download Video"
+                    font_name:"assets/Poppins-Regular.ttf"
+                MDLabel:
+                    id:text_total_video
+                    pos_hint:{"center_x":0.5,"center_y":0.5}
+                    text:"Total video files : "+str(app.total_video_files)
+                    font_name:"assets/Poppins-Regular.ttf"
+                    font_size:"10sp"
+                MDIconButton:
+                    pos_hint:{"center_x":0.9,"center_y":0.5}
+                    icon:"video"
+    Card:
+        pos_hint:{"center_x":0.5,"center_y":0.1}
+        radius:dp(10)
+        size_hint:None,None 
+        ripple_behavior:True
+        size:app.y-dp(15),"50dp"
+        md_bg_color:app.theme_cls.primary_light
+        on_press:_thread.start_new_thread(app.open_audio_downloader,())
+        RelativeLayout:
+            BoxLayout:
+                padding:dp(10)
+                MDLabel:
+                    pos_hint:{"center_x":0.5,"center_y":0.5}
+                    text:"Download Audio"
+                    font_name:"assets/Poppins-Regular.ttf"
+                MDLabel:
+                    id:text_total_audio
+                    pos_hint:{"center_x":0.5,"center_y":0.5}
+                    text:"Total audio files : "+str(app.total_audio_files)
+                    font_name:"assets/Poppins-Regular.ttf"
+                    font_size:"10sp"
+                MDIconButton:
+                    pos_hint:{"center_x":0.9,"center_y":0.5}
+                    icon:"music"

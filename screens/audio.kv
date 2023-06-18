@@ -1,0 +1,32 @@
+MDScreen:
+    id:audio
+    name:"audio"
+    
+    MDLabel:
+        pos_hint:{"center_x":0.5,"center_y":0.95}
+        text:"Download Audio"
+        halign:"center"
+        font_name:"assets/Poppins-Bold.ttf"
+    AnchorLayout:
+        anchor_y:"top"
+        anchor_x:"left"
+        MDIconButton:
+            icon:"chevron-left"
+            on_press:app.screen_manager.transition.direction="right";app.screen_manager.current = "Main"
+    AnchorLayout:
+        size_hint:None,None
+        size:app.y,app.x-dp(100)
+        ScrollView:
+            GridLayout:
+                cols:1
+                spacing:dp(10)
+                size_hint_y:None
+                adaptive_height:True
+                height:self.minimum_height
+                id:card_container
+                BoxLayout:
+                    size_hint:None,None
+                    size:app.y-dp(20),dp(40)
+
+        
+
