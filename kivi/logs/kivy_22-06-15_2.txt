@@ -1,0 +1,49 @@
+[INFO   ] Logger: Record log in /storage/emulated/0/CyberTube/.kivy/logs/kivy_22-06-15_2.txt
+[INFO   ] Kivy: v2.0.0
+[INFO   ] Kivy: Installed at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.9.7 (default, Oct  9 2021, 08:02:40) 
+[GCC 11.1.0]
+[INFO   ] Python: Interpreter at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/bin/python3"
+[INFO   ] KivyMD: 1.0.0.dev0, git-Unknown, 2022-05-19 (installed at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivymd/__init__.py")
+[INFO   ] Factory: 186 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[INFO   ] Text: Provider: sdl2
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL ES 2" graphics system
+[INFO   ] GL: Backend used <sdl2>
+[INFO   ] GL: OpenGL version <b'OpenGL ES 3.2 V@145.0 (GIT@I3d52eaf367)'>
+[INFO   ] GL: OpenGL vendor <b'Qualcomm'>
+[INFO   ] GL: OpenGL renderer <b'Adreno (TM) 506'>
+[INFO   ] GL: OpenGL parsed version: 3, 2
+[INFO   ] GL: Texture max size <16384>
+[INFO   ] GL: Texture max units <16>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[INFO   ] GL: NPOT texture support is available
+[WARNING] Deprecated property "<ColorProperty name=icon_right_color>" of object "<kivymd.uix.textfield.textfield.MDTextField object at 0xb6182178>" was accessed, it will be removed in a future version
+[WARNING] Base: Unknown <android> provider
+[INFO   ] Base: Start application main loop
+[INFO   ] Clipboard: Provider: android
+[WARNING] stderr: Exception ignored in thread started by: <bound method CyberTube.get_url_info of <__main__.CyberTube object at 0xb751dbf8>>
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/storage/emulated/0/CyberTube/main.py", line 94, in get_url_info
+[WARNING] stderr:     link_info  = YouTube(self.url)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/pytube/__main__.py", line 71, in __init__
+[WARNING] stderr:     self.video_id = extract.video_id(url)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/pytube/extract.py", line 133, in video_id
+[WARNING] stderr:     return regex_search(r"(?:v=|\/)([0-9A-Za-z_-]{11}).*", url, group=1)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/pytube/helpers.py", line 129, in regex_search
+[WARNING] stderr:     raise RegexMatchError(caller="regex_search", pattern=pattern)
+[WARNING] stderr: pytube.exceptions.RegexMatchError: regex_search: could not find match for (?:v=|\/)([0-9A-Za-z_-]{11}).*
+[WARNING] stderr: Exception ignored in thread started by: <bound method CyberTube.get_url_info of <__main__.CyberTube object at 0xb751dbf8>>
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/storage/emulated/0/CyberTube/main.py", line 94, in get_url_info
+[WARNING] stderr:     link_info  = YouTube(self.url)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/pytube/__main__.py", line 71, in __init__
+[WARNING] stderr:     self.video_id = extract.video_id(url)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/pytube/extract.py", line 133, in video_id
+[WARNING] stderr:     return regex_search(r"(?:v=|\/)([0-9A-Za-z_-]{11}).*", url, group=1)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/pytube/helpers.py", line 129, in regex_search
+[WARNING] stderr:     raise RegexMatchError(caller="regex_search", pattern=pattern)
+[WARNING] stderr: pytube.exceptions.RegexMatchError: regex_search: could not find match for (?:v=|\/)([0-9A-Za-z_-]{11}).*
+[INFO   ] Base: Leaving application in progress...
